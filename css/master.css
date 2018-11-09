@@ -1,0 +1,139 @@
+@font-face {
+font-family: "Bebas Neue";
+   src: url("..\\fonts\\bebasneue-bold.eot");
+
+   src: url("..\\fonts\\bebasneue-bold.eot?#iefix") format('embedded-opentype'),
+
+        url("..\\fonts/bebasneue-bold.woff") format('woff'),
+
+        url("..\\fonts\\bebasneue-bold.ttf") format('truetype'),
+
+        url("..\\fonts\\bebasneue-bold.svg#adlerRegular") format('svg');
+
+  font-weight: bold;
+
+  font-style: normal;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.background{
+  background-image: url("..\\img\\fondo.jpg");
+  background-size: cover;
+}
+
+.portada{
+  width: 100vw;
+  height: fit-content;
+}
+
+.header{
+  width: 90%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.logo_w{
+  padding-top: 20px;
+}
+
+.menu a{
+  font-size: 24px;
+  font-family: "Bebas Neue";
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu li{
+  padding-left: 10px;
+}
+
+.menu a:hover{
+  color: #c4a708;
+}
+
+.menu li, .menu, .logo_w{
+  display: inline-block;
+}
+
+.btn{
+  display: block;
+  margin: 0 auto 10px;
+  text-decoration: none;
+  font-size: 48px;
+  font-family: "Bebas Neue";
+  color: rgb(54, 56, 88);
+  font-weight: bold;
+  border-width: 10px;
+  border-color: rgb(178, 154, 36);
+  border-style: solid;
+  border-radius: 20px;
+  background-color: rgb(178, 154, 36);
+  width: fit-content;
+  padding: 0 5px;
+  transition-duration: 0.5s;
+  will-change: background-color;
+}
+
+.btn:hover{
+  background-color: rgb(178, 154, 36);
+  box-shadow: 3px 3px 14px black;
+}
+
+.w_es{
+  font-size: 48px;
+  font-family: "Bebas Neue";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.faltan_tan_solo{
+  margin: 30px auto 0;
+  font-size: 48px;
+  font-family: "Bebas Neue";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+.cdContainer{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.countdown{
+  /* background: #b3b3b3; */
+  font-size: 150px;
+  font-family: "Bebas Neue";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.countdown td{
+  padding: 0 10px;
+  border-radius: 20px;
+  margin-right: 20px;
+  background-image: url("..\\img\\countdown.png");
+}
+
+.info{
+    font-size: 30px;
+    font-family: "Bebas Neue";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
