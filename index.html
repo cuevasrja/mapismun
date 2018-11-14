@@ -5,6 +5,7 @@
     <title>Mariano Picón Salas Model Of United Nations</title>
     <link rel="stylesheet" href="./css/master.css">
     <script defer type="text/javascript" src="./js/master.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
@@ -26,14 +27,15 @@
   <body>
   <section class="portada background">
     <header class="header">
-      <a href="index.html"><img src="./img/logo_w.png"  class="logo_w" alt="Logo MAPISMUN"></a>
+      <a href="index.html"><img src="./img/logo_w.png"  class="logo_w" alt="Logo MAPISMUN" width="158px"></a>
+      <span class="burguer-button icon-menu" id="burguer-button"></span>
       <nav id="menu" class="menu">
         <ul>
           <li>
-            <a href="#">Directiva</a>
+            <a href="index.html">Inicio</a>
           </li>
           <li>
-            <a href="#">Ediciones</a>
+            <a href="#">Directiva</a>
           </li>
           <li>
             <a href="#">Comites</a>
@@ -50,23 +52,73 @@
         </ul>
       </nav>
     </header>
-    <h1 class="faltan_tan_solo">Faltan Tan Solo:</h1>
-    <table class="cdContainer">
-      <tr class="countdown">
-        <td id="days">63</td>
-        <td id="hours">05</td>
-        <td id="minutes">34</td>
-        <td id="seconds">10</td>
-      </tr>
-      <tr class="info">
-        <td>Días</td>
-        <td>Horas</td>
-        <td>Minutos</td>
-        <td>Segundos</td>
-      </tr>
-    </table>
-    <h1 class="w_es">¿Qué esperas?</h1>
-    <a class="btn" data-type="submit" method="post" href="mailto:mapismun@gmail.com?subject=Inscripción%20MAPISMUN%20IV&body=Delegación:%0D%0AColegio al que pertenece:%0D%0ANúmero de delegados que van a participar (El máximo por delegación es 8):%0D%0A%0D%0A%0D%0ANos estaremos comunicando con usted para realizar el pago de la inscripción.%0D%0APD: Por favor no cambiar el asunto del correo, gracias.">Inscribete Ya</a>
+    <div class="contenedor-a">
+      <h1 class="faltan_tan_solo">Faltan Tan Solo:</h1>
+      <table class="cdContainer">
+        <tr class="countdown">
+          <td id="days">63</td>
+          <td id="hours">05</td>
+          <td id="minutes">34</td>
+          <td id="seconds">10</td>
+        </tr>
+        <tr class="info">
+          <td>Días</td>
+          <td>Horas</td>
+          <td>Minutos</td>
+          <td>Segundos</td>
+        </tr>
+      </table>
+      <h1 class="w_es">¿Qué esperas?</h1>
+      <a class="btn" data-type="submit" method="post" href="mailto:mapismun@gmail.com?subject=Inscripción%20MAPISMUN%20IV&body=Delegación:%0D%0AColegio al que pertenece:%0D%0ANúmero de delegados que van a participar (El máximo por delegación es 8):%0D%0A%0D%0A%0D%0ANos estaremos comunicando con usted para realizar el pago de la inscripción.%0D%0APD: Por favor no cambiar el asunto del correo, gracias.">Inscribete Ya</a>
+    </div>
   </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.4/blazy.min.js"></script>
+    <script>
+      var consulta = window.matchMedia('(max-width: 500px)');
+      consulta.addListener(mediaQuery);
+
+      var $burguerButton = document.getElementById('burguer-button');
+      var $menu = document.getElementById('menu');
+      function toggleMenu(){
+        $menu.classList.toggle('active')
+      };
+      function showMenu(){
+        $menu.classList.add('active');
+      };
+      function hideMenu(){
+        $menu.classList.remove('active');
+      };
+
+      function mediaQuery() {
+        if (consulta.matches) {
+          // si se cumple hagamos esto
+          console.log('se cumplió la condicion');
+          $burguerButton.addEventListener('touchstart', toggleMenu);
+        } else {
+          $burguerButton.removeEventListener('touchstart', toggleMenu);
+          // si no se cumple hagamos esto
+          console.log('no se cumplió la condicion');
+        }
+      }
+      mediaQuery();
+
+      // lazy loading
+      var bLazy = new Blazy({
+          selector: 'img'
+      });
+      // $burguerButton.addEventListener('touchstart', toggleMenu);
+
+      // function toggleMenu(){
+      //   $menu.classList.toggle('active')
+      // };
+
+      // Gestos touch
+      var $body = document.body;
+
+      var gestos = new Hammer($body);
+      gestos.on('swipeleft', hideMenu);
+      gestos.on('swiperight', showMenu);
+    </script>
   </body>
 </html>
