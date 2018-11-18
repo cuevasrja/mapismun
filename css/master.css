@@ -55,6 +55,10 @@ font-family: "Bebas Neue";
 }
 
 
+html{
+    height: -webkit-fill-available;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -99,7 +103,7 @@ body{
 }
 
 .menu a:hover{
-  color: #c4a708;
+  color: rgb(200, 155, 45);
 }
 
 .menu{
@@ -115,18 +119,16 @@ body{
   color: rgb(54, 56, 88);
   font-weight: bold;
   border-width: 10px;
-  border-color: rgb(178, 154, 36);
+  border-color: rgb(200, 155, 45);
   border-style: solid;
   border-radius: 20px;
-  background-color: rgb(178, 154, 36);
+  background-color: rgb(200, 155, 45);
   width: fit-content;
   padding: 0 5px;
   transition-duration: 0.5s;
-  will-change: background-color;
 }
 
 .btn:hover{
-  background-color: rgb(178, 154, 36);
   box-shadow: 3px 3px 14px black;
 }
 
