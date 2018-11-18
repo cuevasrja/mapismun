@@ -285,6 +285,9 @@ body{
     padding: 8px 0;
     border-bottom: 1px solid white;
   }
+  .menu li:first-child{
+    border-top: 1px solid white;
+  }
   .faltan_tan_solo {
     font-size: 55px;
     margin-top: 15%;
