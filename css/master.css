@@ -219,13 +219,17 @@ body{
     padding: 0;
   }
   .menu a{
-    font-size: 50px;
+    font-size: 70px;
   }
   .menu li {
     padding-left: 0px;
     display: block;
-    margin: 10px auto 0;
+    margin: 40px auto 0;
+    border-bottom: 3px solid rgb(200, 155, 45);
     text-align: center;
+  }
+  .menu li:first-child{
+    margin-top: 0;
   }
   .faltan_tan_solo{
     font-size: 80px;
@@ -275,7 +279,6 @@ body{
   .active {
     left: 0;
   }
-
   .menu ul {
     flex: 1;
   }
@@ -287,6 +290,9 @@ body{
   }
   .menu li:first-child{
     border-top: 1px solid white;
+  }
+  .menu a{
+    font-size: 50px;
   }
   .faltan_tan_solo {
     font-size: 55px;
@@ -304,5 +310,27 @@ body{
   }
   .btn {
     font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .menu a{
+    font-size: 40px;
+  }
+  .faltan_tan_solo {
+    font-size: 45px;
+  }
+  .countdown{
+    font-size: 60px;
+  }
+  .info{
+    font-size: 15px;
+  }
+  .w_es {
+    font-size: 45px;
+    margin-top: 10%;
+  }
+  .btn {
+    font-size: 45px;
   }
 }
