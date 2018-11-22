@@ -314,6 +314,9 @@ body{
 }
 
 @media screen and (max-width: 340px) {
+  .logo_w {
+    width: 170px;
+  }
   .menu a{
     font-size: 40px;
   }
