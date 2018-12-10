@@ -256,6 +256,9 @@ body{
 .comites h3, .vice , .secre{
   margin: 0;
 }
+.contenedor-com div a{
+  text-decoration: none;
+}
 .presi{
   margin: 10px 0 0;
 }
