@@ -183,7 +183,7 @@ body{
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
-  text-shadow: 6px 7px deepskyblue;
+  text-shadow: 0.05em 0.05em deepskyblue;
 }
 
 .countdown td{
