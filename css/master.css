@@ -81,7 +81,7 @@ body{
   padding: 0;
   width: 100vw;
 }
-
+/* index */
 .background{
   background-image: url("..\\img\\fondo.jpg");
   background-size: cover;
@@ -147,6 +147,7 @@ body{
 
 .btn:hover{
   box-shadow: 3px 3px 14px black;
+  cursor: pointer;
 }
 
 .w_es{
@@ -216,6 +217,7 @@ body{
   display: none;
   box-shadow: -4px 4px 14px black;
 }
+/* comites */
 .comites{
   width: 100vw;
   display: flex;
@@ -287,6 +289,7 @@ body{
 }
 .matri:hover{
   box-shadow: 3px 3px 14px black;
+  cursor: pointer;
 }
 .guia{
   border-radius: 20px;
@@ -303,10 +306,164 @@ body{
 }
 .guia:hover{
   box-shadow: 3px 3px 14px black;
+  cursor: pointer;
 }
 .guide{
   margin-top: 10px;
 }
+/* inscripcion */
+.inscripcion{
+  width: 100vw;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-family: "Bebas Neue";
+  color: white;
+  padding-bottom: 20px;
+}
+.contenedor-ins{
+  width: 95vw;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin: 0 auto;
+}
+.inscripcion h1{
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+.inscripcion li{
+  font-size: 2.5em;
+  font-weight: normal;
+  text-align: justify;
+}
+.inscripcion h2{
+  font-size: 4em;
+  margin: 0.2em 0 0.2em 0;
+  text-align: center;
+}
+.inscripcion h2 span{
+  color: rgb(200, 155, 45);
+}
+.inscripcion .btn-prep{
+  font-size: 1.7em;
+  margin: 0 auto;
+  display: table;
+}
+.preparate{
+  border-radius: 20px;
+  background-color: rgb(200, 155, 45);
+  width: fit-content;
+  padding: 5px;
+  color: white;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  font-size: 2em;
+  border-width: 0;
+  transition-duration: 0.5s;
+}
+.preparate:hover{
+  box-shadow: 3px 3px 14px black;
+  cursor: pointer;
+}
+/* preparacion */
+.preparacion{
+  width: 100vw;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-family: "Bebas Neue";
+  color: white;
+  padding-bottom: 20px;
+}
+.contenedor-prep{
+  width: 95vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+	grid-gap: 5px;
+  grid-column-gap: 115px;
+  grid-row-gap: 20px;
+}
+.contenedor-prep div{
+  margin-top: 15px;
+}
+.preparacion img{
+  width: 150px;
+}
+.preparacion h2{
+  color: white;
+  font-size: 2.5em;
+  margin: 10px 0px 0px;
+  font-weight: bold;
+}
+.descargar{
+  border-radius: 20px;
+  background-color: rgb(200, 155, 45);
+  width: fit-content;
+  color: white;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  font-size: 2.5em;
+  border-width: 0;
+  transition-duration: 0.5s;
+  padding: 5px;
+}
+.descargar:hover{
+  box-shadow: 3px 3px 14px black;
+  cursor: pointer;
+}
+/* contactos */
+.contactos{
+  width: 100vw;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 6em;
+  font-family: "Bebas Neue";
+  color: white;
+  padding-bottom: 20px;
+}
+.contenedor-con{
+  width: 95vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+	grid-gap: 5px;
+  grid-column-gap: 115px;
+  grid-row-gap: 20px;
+}
+.contactos img{
+  width: 150px;
+  display: block;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.contactos button{
+    border-radius: 20px;
+    background-color: rgb(200, 155, 45);
+    width: fit-content;
+    color: white;
+    font-family: "Bebas Neue";
+    font-weight: bold;
+    font-size: 2.5em;
+    border-width: 0;
+    transition-duration: 0.5s;
+    padding: 5px;
+  }
+.contactos button:hover{
+    box-shadow: 3px 3px 14px black;
+    cursor: pointer;
+  }
+
 @media screen and (max-width: 1300px){
   .header{
     display: inherit;
@@ -463,6 +620,12 @@ body{
   .comites h4{
     font-size: 1.3em;
     font-weight: normal;
+  }
+  .contenedor-prep{
+    grid-template-columns: repeat(auto-fill, 295px);
+  }
+  .contenedor-con{
+    grid-template-columns: repeat(auto-fill, 295px);
   }
 }
 
