@@ -464,23 +464,38 @@ body{
     cursor: pointer;
   }
 /* directiva */
-.construccion{
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 2;
-  background: rgb(54, 56, 88);
-  font-family: "Bebas Neue";
-  font-weight: bold;
-  color: white;
-  font-size: 4.5em;
-  margin: 0;
+.directiva{
+  width: 100vw;
   display: flex;
-  text-align: center;
+  align-content: center;
   justify-content: center;
+  margin-top: 6em;
+  font-family: "Bebas Neue";
+  color: white;
+  padding-bottom: 20px;
+}
+.contenedor-dic{
+  width: 95vw;
+  text-align: center;
   align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+	grid-gap: 5px;
+  grid-column-gap: 115px;
+  grid-row-gap: 20px;
+}
+.c-organizador img{
+    max-width: 300px;
+}
+.directiva h1, .directiva h3{
+  color: rgb(200, 155, 45);
+  font-weight: bold;
+}
+.directiva a{
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
 }
 @media screen and (max-width: 1300px){
   .header{
