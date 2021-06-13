@@ -221,7 +221,7 @@ body{
 }
 /* comites */
 .comites{
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -231,7 +231,7 @@ body{
   padding-bottom: 20px;
 }
 .contenedor-com{
-  width: 95vw;
+  width: 95%;
   align-items: center;
   justify-content: center;
   display: grid;
@@ -315,7 +315,7 @@ body{
 }
 /* inscripcion */
 .inscripcion{
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -325,7 +325,7 @@ body{
   padding-bottom: 20px;
 }
 .contenedor-ins{
-  width: 95vw;
+  width: 95%;
   align-items: center;
   justify-content: center;
   display: block;
@@ -373,7 +373,7 @@ body{
 }
 /* preparacion */
 .preparacion{
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -383,7 +383,7 @@ body{
   padding-bottom: 20px;
 }
 .contenedor-prep{
-  width: 95vw;
+  width: 95%;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -423,7 +423,7 @@ body{
 }
 /* contactos */
 .contactos{
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -433,7 +433,7 @@ body{
   padding-bottom: 20px;
 }
 .contenedor-con{
-  width: 95vw;
+  width: 95%;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -467,7 +467,7 @@ body{
   }
 /* directiva */
 .directiva{
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -477,7 +477,7 @@ body{
   padding-bottom: 20px;
 }
 .contenedor-dic{
-  width: 95vw;
+  width: 95%;
   text-align: center;
   align-items: center;
   justify-content: center;
