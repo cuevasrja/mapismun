@@ -53,7 +53,7 @@
       </nav>
     </header>
     <div class="contenedor-a">
-      <h1 class="faltan_tan_solo">Faltan Tan Solo:</h1>
+      <h1 class="faltan_tan_solo">Faltan Tan Solo: </h1>
       <table class="cdContainer">
         <tr class="countdown">
           <td id="days">00</td>
@@ -75,11 +75,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.4/blazy.min.js"></script>
     <script>
-      var consulta = window.matchMedia('(max-width: 500px)');
+      let consulta = window.matchMedia('(max-width: 500px)');
       consulta.addListener(mediaQuery);
 
-      var $burguerButton = document.getElementById('burguer-button');
-      var $menu = document.getElementById('menu');
+      let $burguerButton = document.getElementById('burguer-button');
+      let $menu = document.getElementById('menu');
       function toggleMenu(){
         $menu.classList.toggle('active')
       };
@@ -104,7 +104,7 @@
       mediaQuery();
 
       // lazy loading
-      var bLazy = new Blazy({
+      let bLazy = new Blazy({
           selector: 'img'
       });
       // $burguerButton.addEventListener('touchstart', toggleMenu);
@@ -114,9 +114,9 @@
       // };
 
       // Gestos touch
-      var $body = document.body;
+      let $body = document.body;
 
-      var gestos = new Hammer($body);
+      let gestos = new Hammer($body);
       gestos.on('swipeleft', hideMenu);
       gestos.on('swiperight', showMenu);
     </script>
